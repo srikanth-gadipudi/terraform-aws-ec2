@@ -5,7 +5,15 @@ terraform {
       version = "5.56.0"
     }
   }
+  backend "s3" {
+    bucket = "terraform-s3-bucket-srikanth"
+    key    = "terraform/terraform.tfstate"
+    region = "us-east-2"
+    dynamodb_table = "mytesttable"
+  }
 }
+
+
 
 provider "aws" {
   region = var.region
