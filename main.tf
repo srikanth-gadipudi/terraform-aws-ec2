@@ -9,7 +9,7 @@ terraform {
     bucket = "terraform-s3-bucket-srikanth"
     key    = "terraform/terraform.tfstate"
     region = "us-east-2"
-    dynamodb_table = "mytesttable"
+    dynamodb_table = "mydynamodb-test"
   }
 }
 
